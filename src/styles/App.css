@@ -1,0 +1,79 @@
+@font-face {
+  font-family: 'title';
+  src: url('../styles/fonts/Instagram\ Sans\ Medium.woff');
+}
+
+@font-face {
+  font-family: 'font';
+  src: url('../styles/fonts/Instagram\ Sans\ Light.woff');
+}
+
+.App {
+  text-align: center;
+  display: grid;
+  grid-template-columns: 0.8fr 2.9fr 1.5fr;
+  grid-column: auto;
+  min-height: 100vh;
+  grid-gap: 5px;
+}
+
+.caja{
+  display: inline;
+}
+
+.opciones{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  margin: 2px 0 2px 0;
+  padding: 12px;
+}
+
+.opciones span{
+  font-size: 17px;
+  padding-left: 16px;
+  font-family: font;
+  cursor: pointer;
+}
+
+.opciones:hover{
+  background-color: rgba(44, 43, 44, 0.55);
+  border-radius: 10px;
+}
+
+.opciones span:active{
+  font-family: title;
+}
+
+.icon{
+  position: relative;
+}
+
+.title{
+  display: flex;
+  position: relative;
+  padding: 29px 12px 16px;
+  margin-bottom: 19px;
+  align-items: center;
+}
+
+.menu{
+  grid-column: 1/1;
+  align-items: flex-start;
+  padding: 9px 12px 20px 12px;
+  border-top-width: 0;
+  border-right-width: 1px;
+  border-bottom-width: 0;
+  border-left-width: 0;
+  border-style: solid;
+  border-right-color: rgba(126, 126, 126, 0.349);
+}
+
+.opciones img{
+  width: 24px;
+  height: 24px;
+  border-radius: 50px;
+  vertical-align: baseline;
+}
+
+.opciones .perfil{ padding-bottom: 7px; }
