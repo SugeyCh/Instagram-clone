@@ -77,3 +77,130 @@
 }
 
 .opciones .perfil{ padding-bottom: 7px; }
+
+.loader, .loader:before, .loader:after {
+  border-radius: 50%;
+  width: 2.5em;
+  height: 2.5em;
+  animation-fill-mode: both;
+  animation: bblFadInOut 1.8s infinite ease-in-out;
+}
+
+.loader {
+  color: #FFF;
+  font-size: 7px;
+  position: relative;
+  text-indent: -9999em;
+  transform: translateZ(0);
+  animation-delay: -0.16s;
+}
+
+.loader:before,
+.loader:after {
+  content: '';
+  position: absolute;
+  top: 0;
+}
+
+.loader:before {
+  left: -3.5em;
+  animation-delay: -0.32s;
+}
+
+.loader:after { left: 3.5em; }
+
+@keyframes bblFadInOut {
+  0%, 80%, 100% { box-shadow: 0 2.5em 0 -1.3em }
+  40% { box-shadow: 0 2.5em 0 0 }
+}
+    
+
+.loader2 {
+  width: 24px;
+  height: 24px;
+  border-radius: 50%;
+  display: inline-block;
+  border-top: 3px solid #FFF;
+  border-right: 3px solid transparent;
+  box-sizing: border-box;
+  animation: rotation 1s linear infinite;
+}
+  
+@keyframes rotation {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+} 
+
+.historias{
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  padding-top: 27px;
+  padding-left: 25px;
+}
+
+.his{
+  display: block;
+  overflow-y: hidden;
+  box-sizing: border-box;
+  position: relative;
+  margin-top: 0;
+  padding: 8px;
+}
+
+.history{
+  display: flex;
+  flex-direction: column;
+  align-items: stretch;
+  overflow-y: hidden;
+  height: 100px;
+  outline: none;
+  position: relative;
+}
+
+.op-his{
+  display: flex;
+  align-items: stretch;
+  flex-direction: row;
+  height: 100%;
+  position: relative;
+  overflow-x: auto;
+  overflow-y: hidden;
+}
+
+.person{
+  border: solid 2px black;
+  border-radius: 50px;
+  height: 55px;
+}
+
+.picture{
+  margin: 8px;
+  border-radius: 50px;
+  height: 63px;
+  background: 
+    radial-gradient(at 100% 0%, #7e00ff 0%, transparent 70%),
+    linear-gradient(172deg, #db0038 13%, transparent 67%),
+    linear-gradient(281deg, #db0038 13%, transparent 67%),
+    linear-gradient(61deg, #f48200 0%, transparent 67%);
+  padding: 2px;
+  box-sizing: border-box;
+  cursor: pointer;
+}
+
+.user{
+  display: block;
+  text-overflow: ellipsis;
+  font-size: 14px;
+  text-align: center;
+  text-wrap: nowrap;
+  white-space-collapse: collapse;
+  overflow-x: hidden;
+  overflow-y: hidden;
+  max-width: 75px;
+  cursor: pointer;
+}

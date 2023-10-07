@@ -72,7 +72,7 @@ const Menu = () => {
                     <img src={ user.picture.medium } alt="" />
                   </div>
                 ) : (
-                  <p>Cargando..</p>
+                  <span className='loader2'></span>
                 )
               }
               <span className='perfil'>Perfil</span>
