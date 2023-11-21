@@ -191,16 +191,19 @@
   box-sizing: border-box;
   cursor: pointer;
 }
+.pictures{ margin: 8px; }
 
 .user{
   display: block;
   text-overflow: ellipsis;
-  font-size: 14px;
+  font-size: 13px;
   text-align: center;
+  font-family: font;
   text-wrap: nowrap;
   white-space-collapse: collapse;
   overflow-x: hidden;
   overflow-y: hidden;
-  max-width: 75px;
+  max-width: 70px;
   cursor: pointer;
+  padding: 0 2px 0 2px;
 }
