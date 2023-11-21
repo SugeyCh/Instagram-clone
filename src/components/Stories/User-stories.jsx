@@ -1,5 +1,5 @@
 import { useState, useEffect } from "react"
-import instance                from "../services/radom-user"
+import { instanceUsers }       from "../../services/api"
 import Skeleton                from '@mui/material/Skeleton'
 
 const UserStories = () => {
@@ -10,7 +10,7 @@ const UserStories = () => {
     const fetchData = async () => {
       setTimeout(async () => {
         try {
-          const response = await instance.get('https://randomuser.me/api/?results=8')
+          const response = await instanceUsers.get('https://randomuser.me/api/?results=8')
           setHistory(response.data.results)
           setLoading(false)
         } catch (err) {

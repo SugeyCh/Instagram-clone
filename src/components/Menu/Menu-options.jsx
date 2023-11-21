@@ -1,4 +1,4 @@
-import '../styles/App.css'
+import '../../styles/App.css'
 import { 
   Inicio, 
   Busqueda, 
@@ -6,7 +6,7 @@ import {
   Reels, 
   Mensajes, 
   Notificaciones, 
-  Crear } from './icons/icons.jsx'
+  Crear } from '../icons/icons.jsx'
 
 const MenuOptions = () => {
   const Options = [

@@ -1,6 +1,6 @@
-import '../styles/App.css'
+import '../../styles/App.css'
 import { useEffect, useState } from "react"
-import instance                from "../services/radom-user.js"
+import { instanceUsers }       from "../../services/api.js"
 import { Skeleton }            from '@mui/material'
 
 const UserProfile = () => {
@@ -10,7 +10,7 @@ const UserProfile = () => {
     const fetchData = async () => {
       setTimeout(async () => {
         try {
-          const response = await instance.get('https://randomuser.me/api/?results=1')
+          const response = await instanceUsers.get('https://randomuser.me/api/?results=1')
           setUser(response.data.results[0])
         } catch (err) {
           console.log(err)

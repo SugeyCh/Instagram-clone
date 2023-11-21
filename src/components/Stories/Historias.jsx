@@ -1,4 +1,5 @@
 import UserStories from "./User-stories"
+import Publications from "../Publications/Publication"
 
 const Historias = () => {
   return(
@@ -10,6 +11,7 @@ const Historias = () => {
               <UserStories />
             </div>
           </div>
+          <Publications />
         </div>
       </div>
     </>
